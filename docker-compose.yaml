@@ -1,0 +1,15 @@
+# mqtt-watchdog
+#
+# 
+
+version: '3'
+
+services:
+  mqtt-watchdog:
+    image: mqtt_watchdog
+    container_name: mqtt_watchdog
+    restart: always
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+      - /app:/usr/src/app"

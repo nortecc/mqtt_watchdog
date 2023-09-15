@@ -1,0 +1,32 @@
+{   
+    "global": {
+        "loglevel": 1
+    },
+
+    "broker": {
+        "ip":   "192.168.178.11",
+        "port": 1883,
+        "topic": "watchdog",
+        "username": "....",
+        "password": "....",
+        "protocol": "MQTTv311",
+        "keepalive": 60
+    },
+    "telegram": {
+        "TOKEN":    ".....",
+        "chat_id":  "....."
+    },
+    "topics": [
+        
+        {
+            "topic":    "vzlogger/chn0/agg",
+            "name":     "Stromzaehler Einspeisung",
+            "expiry":   300
+        },
+        {
+            "topic":    "vzlogger/chn1/agg",
+            "name":     "Stromzaehler Bezug",
+            "expiry":   300
+        }
+    ]
+}
