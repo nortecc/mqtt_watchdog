@@ -14,7 +14,8 @@
     },
     "telegram": {
         "TOKEN":    ".....",
-        "chat_id":  "....."
+        "chat_id":  ".....",
+        "prefix":   "....."
     },
     "topics": [
         
@@ -27,6 +28,12 @@
             "topic":    "vzlogger/chn1/agg",
             "name":     "Stromzaehler Bezug",
             "expiry":   300
+        },
+        {
+            "topic":    "temp/HeizungVL",
+            "name":     "Vorlauftemperatur Heizung",
+            "min":      10,
+            "max":      90
         }
     ]
 }
