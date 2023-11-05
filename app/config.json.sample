@@ -1,6 +1,6 @@
 {   
     "global": {
-        "loglevel": 1
+        "loglevel": 3
     },
 
     "broker": {
@@ -33,7 +33,8 @@
             "topic":    "temp/HeizungVL",
             "name":     "Vorlauftemperatur Heizung",
             "min":      10,
-            "max":      90
+            "max":      90,
+            "range":    {"min":10,"max":90}
         }
     ]
 }
